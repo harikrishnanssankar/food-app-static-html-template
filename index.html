@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="menu">
+            <div class="hamburger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+            <p class="heading1">Lorem</p><br>
+            <p class="heading2">Ipsum</p>
+            <ul class="nav-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Cusine</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Back</a></li>
+            </ul>
+            <div class="cart">
+                <button class="btn">Cart</button>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="heading">
+                <p class="heading-child">What are you</p>
+                <p>having for Lunch?</p>
+            </div>
+            <div class="para__container">
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, excepturi? Eius repreh
+                    fugiat ea rem magni</p>
+                <br>
+                <hr>
+            </div>
+            <div class="list__items">
+                <div class="items">
+                    <img class="image"
+                        src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1428&q=80"
+                        alt="" srcset="">
+                    <p>mexican tacos</p>
+                </div>
+                <div class="items">
+                    <img class="image"
+                        src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
+                        alt="" srcset="">
+                    <p>farmhouse pizza</p>
+                </div>
+                <div class="items">
+                    <img class="image"
+                        src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=364&q=80"
+                        alt="" srcset="">
+                    <p>chicken burger</p>
+                </div>
+                <div class="items">
+                    <img class="image"
+                        src="https://images.unsplash.com/photo-1568289801407-a1e2b4809aec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                        alt="" srcset="">
+                    <p>loaded nachos</p>
+                </div>
+                <div class="items item-last">
+                    <img class="image"
+                        src="https://images.unsplash.com/photo-1600490036275-35f5f1656861?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+                        alt="" srcset="">
+                    <p>hakka noodles</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+            links.forEach(link => {
+                link.classList.toggle("fade");
+            });
+        });
+    </script>
+</body>
+
+</html>
